@@ -31,6 +31,7 @@ The following machine learning models were used for prediction:
 
 The performance of each model was evaluated using the root mean squared error (RMSE) and mean absolute error (MSE).
 
+#### Analysis of the ML Models
 From the analysis Neural Networks seems to be the best performing model. The Autoregressive model, as a benchmark, shows poor result. Random Forest and Explainable Boosting Machine follow in a good way shape of observations, but the previous one overfit. Neural Networks are able to capture spikes in the observations following the shape of them. In all models the lag feature shifted by an hour is the most relevant to explain the outcome, the others change depending by the model. From the Partial Dependence Plot there is a confirm about the positive correlation between the ”lagged 1h” feature and the air pollution.
 
 ## Instructions
