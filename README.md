@@ -39,7 +39,7 @@ From the analysis Neural Networks seems to be the best performing model. The Aut
 The Climate Patterns feature allows users to retrieve current weather data for a specified location, including temperature, humidity, wind speed, and more.
 
 ### API Used for Climate Patterns Data
-The weather data is retrieved from the [Weather by API-Ninjas](https://rapidapi.com/apininjas/api/weather-by-api-ninjas) using [RapidAPI](https://rapidapi.com/hub).
+The weather data is retrieved from the [Weather by API-Ninjas](https://rapidapi.com/apininjas/api/weather-by-api-ninjas) using [RapidAPI](https://rapidapi.com/hub) furnishing real-time insights.
 
 ### Features Retrieved for Climate Patterns
 The app retrieves the following weather data:
