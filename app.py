@@ -45,7 +45,7 @@ def weather():
 
         # Make an API request to get weather data
         headers = {
-            'X-RapidAPI-Key': "e512494693mshfb53e30cb046452p189817jsn44e6cd9f8fe6",
+            'X-RapidAPI-Key': "API_KEY",
             'X-RapidAPI-Host': "weather-by-api-ninjas.p.rapidapi.com"
         }
         params = {
