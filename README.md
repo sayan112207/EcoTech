@@ -1,7 +1,7 @@
 # EcoTech
 GFG Hackathon
 
-# PM2.5 Prediction Project
+## PM2.5 Prediction Project
 Data Analysis of PM2.5 levels over time and the performance of machine learning models for predicting PM2.5 levels.
 
 ## Data Visualization
@@ -12,12 +12,6 @@ The Image folder contains two images:
 ![PM2.5 levels vs Month](https://github.com/sayan112207/EcoTech/blob/main/Images/Air%20Pollution/PM%20vs%20month%20bar.png?raw=true)
 <br>
 ![PM2.5 levels vs Year](https://github.com/sayan112207/EcoTech/blob/main/Images/Air%20Pollution/PM%20vs%20year%20bar.png?raw=true)
-
-
-* `AutoRegressive Model.png`: This image shows the performance of the Auto Regression Model for predicting PM2.5 levels.
-* `Explainable Boosting Model.png`: This image shows the performance of the ML Model: Explainable Boosting Machine for predicting PM2.5 levels.
-* `RandomForestRegressor Model.png`: This image shows the performance of the Random Forest Regressor Model for predicitng PM2.5 levels.
-* `NN MLPRegressor Model.png`: This image shows the performance of the Neural Networks Model for predicting PM2.5 levels.
 
 ## Machine Learning Models
 
