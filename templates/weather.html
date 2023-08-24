@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Climate Patterns</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set background color and text color */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Style the header */
+        h1 {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Style the main content */
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        /* Style the weather data */
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        /* Add styles for links if needed */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Climate Patterns</h1>
+    <div class="container">
+        <h2>Weather Information</h2>
+        {% if weather_data %}
+        <p>Temperature: {{ weather_data['temp'] }}°C</p>
+        <p>Feels Like: {{ weather_data['feels_like'] }}°C</p>
+        <p>Humidity: {{ weather_data['humidity'] }}%</p>
+        <p>Min Temperature: {{ weather_data['min_temp'] }}°C</p>
+        <p>Max Temperature: {{ weather_data['max_temp'] }}°C</p>
+        <p>Wind Speed: {{ weather_data['wind_speed'] }} m/s</p>
+        <p>Wind Degrees: {{ weather_data['wind_degrees'] }}°</p>
+        <p>Sunrise: {{ weather_data['sunrise'] }}</p>
+        <p>Sunset: {{ weather_data['sunset'] }}</p>
+        <p>Cloud Coverage: {{ weather_data['cloud_pct'] }}%</p>
+        {% else %}
+        <p>No weather data available.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
