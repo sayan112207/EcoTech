@@ -31,6 +31,12 @@ def predict_pm():
     pm_predictions_log = model.predict(input_dates_scaled)
     pm_predictions = np.expm1(pm_predictions_log)
 
+    # Create a list of tuples, each containing an hour and its prediction
+    predictions = [(f"{hour:02}:00", prediction) for hour, prediction in enumerate(pm_predictions)]
+
+    # Display the predictions
+    return render_template('result.html', predictions=predictions)
+
     # Display the predictions
     return render_template('result.html', predictions=pm_predictions)
 
