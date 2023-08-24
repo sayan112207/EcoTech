@@ -32,13 +32,9 @@ The performance of each model was evaluated using the root mean squared error (R
 To run the project, clone the repository and install the dependencies.
 
 ### Step 1: Run the .ipynb file
-### Step 2: Run the command python app.py
-
-
+### Step 2: Run the command 
 ```
-
-This will create the data visualization images.
-
+python app.py
 ```
 
 
