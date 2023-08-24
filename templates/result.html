@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PM2.5 Prediction Result</title>
+</head>
+<body>
+    <h1>PM2.5 Prediction Result</h1>
+    <h2>Predicted PM2.5 values for the entire day:</h2>
+    <ul>
+        {% for prediction in predictions %}
+            <li>{{ loop.index }}: {{ prediction }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
