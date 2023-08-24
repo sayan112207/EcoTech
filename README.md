@@ -7,6 +7,8 @@ Data Analysis of PM2.5 levels over time and the performance of machine learning 
 ## Data Visualization
 
 The following images are the distributions of PM2.5 over a time-period.
+<br>
+<br>
 
 ![PM2.5 levels over a prolonged time-period](https://github.com/sayan112207/EcoTech/blob/main/Images/Air%20Pollution/PM%20time%20Series.png?raw=true)
 <br>
