@@ -1,7 +1,7 @@
 # EcoTech
 GFG Hackathon
 
-## PM2.5 Prediction Project
+## PM2.5 Prediction
 Data Analysis of PM2.5 levels over time and the performance of machine learning models for predicting PM2.5 levels.
 
 ## Data Visualization
@@ -34,15 +34,48 @@ The performance of each model was evaluated using the root mean squared error (R
 #### Analysis of the ML Models
 From the analysis Neural Networks seems to be the best performing model. The Autoregressive model, as a benchmark, shows poor result. Random Forest and Explainable Boosting Machine follow in a good way shape of observations, but the previous one overfit. Neural Networks are able to capture spikes in the observations following the shape of them. In all models the lag feature shifted by an hour is the most relevant to explain the outcome, the others change depending by the model. From the Partial Dependence Plot there is a confirm about the positive correlation between the ”lagged 1h” feature and the air pollution.
 
-## Instructions
 
-To run the project, clone the repository and install the dependencies.
+## Climate Patterns (Weather) Data
+The Climate Patterns feature allows users to retrieve current weather data for a specified location, including temperature, humidity, wind speed, and more.
 
-### Step 1: Run all the cells in Air Quality.ipynb
-### Step 2: Run the command 
-```
-python app.py
-```
+### API Used for Climate Patterns Data
+The weather data is retrieved from the <link href="https://rapidapi.com/apininjas/api/weather-by-api-ninjas">Weather By API Ninjas</link> API using RapidAPI.
+
+### Features Retrieved for Climate Patterns
+The app retrieves the following weather data:
+
+- Temperature: Current temperature in Celsius.
+- Feels Like: The "feels like" temperature in Celsius.
+- Humidity: Humidity percentage.
+- Min Temperature: Minimum temperature in Celsius.
+- Max Temperature: Maximum temperature in Celsius.
+- Wind Speed: Wind speed in meters per second.
+- Wind Degrees: Wind direction in degrees.
+- Sunrise: Time of sunrise.
+- Sunset: Time of sunset.
+- Cloud Coverage: Cloud coverage percentage.
+
+## How to Use the App
+
+1. Clone this repository to your local machine.
+
+2. Install the required Python libraries using `pip install -r requirements.txt`.
+
+3. Replace `"API_KEY"` with your actual API key in the Flask app code (`app.py`).
+
+4. Run the Flask app using ```python app.py```.
+
+5. Access the app in your web browser at `http://localhost:5000`.
+
+6. Use the "Air Quality" and "Climate Patterns" buttons to access the respective functionalities.
+
+7. For "Air Quality," input a date to get PM2.5 predictions.
+
+8. For "Climate Patterns," input a city, state, country, and pincode to retrieve weather data.
+
+## Author
+
+[Sayan Banerjee], [Rahul Naugariya], [Shubham Patel]
 
 
 I hope this helps!
