@@ -13,5 +13,5 @@ numpy==1.25.2
 pytz==2023.3
 requests==2.31.0
 urllib3==2.0.4
-Werkzeug==2.3.7
+Werkzeug==3.0.3
 zope.interface==6.0
