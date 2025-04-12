@@ -8,6 +8,15 @@ from flask import Flask, request, render_template
 with open('pm_model.pkl', 'rb') as file:
     model, scaler = pickle.load(file)
 
+from dotenv import load_dotenv
+import os
+
+# Load the .env file
+load_dotenv()
+
+# Get the API key from the environment variables
+api_key = os.getenv("API_KEY")
+
 app = Flask(__name__)
 
 
@@ -51,7 +60,7 @@ def weather():
 
         # Make an API request to get weather data
         headers = {
-            'X-RapidAPI-Key': "API_KEY",
+            'X-RapidAPI-Key': api_key,
             'X-RapidAPI-Host': "weather-by-api-ninjas.p.rapidapi.com"
         }
         params = {
