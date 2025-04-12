@@ -16,3 +16,4 @@ requests
 urllib3
 Werkzeug
 zope.interface
+scikit-learn
